@@ -6,17 +6,17 @@ import { GuestHeader } from "../../components/templates/guest/guestHeader";
 
 
 
-const DynamicCreateMap = dynamic(() =>
-    import('../../components/map/CreateMap'), { ssr: false }
+const DynamicTestMap = dynamic(() =>
+    import('../../components/map/testMap'), { ssr: false }
 );
 
 
-const ViewMap: NextPage = () => {
+const ViewTestMap: NextPage = () => {
     return (
         <div>
             <GuestHeader />
-            <DynamicCreateMap />
+            <DynamicTestMap />
         </div>
     )
 }
-export default ViewMap;
+export default ViewTestMap;
