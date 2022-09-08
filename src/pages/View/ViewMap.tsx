@@ -3,7 +3,12 @@ import Head from 'next/head';
 import dynamic from "next/dynamic";
 import L from 'leaflet';    //marker壊れたの直すよう
 import { GuestHeader } from "../../components/templates/guest/guestHeader";
+import React, { createContext, useState } from 'react';
 
+export const TestCickContext = createContext({} as {
+    clickflag: boolean
+    setClickFlag: React.Dispatch<React.SetStateAction<boolean>>
+})
 
 
 const DynamicCreateMap = dynamic(() =>
@@ -12,11 +17,13 @@ const DynamicCreateMap = dynamic(() =>
 
 
 const ViewMap: NextPage = () => {
+    const [clickflag, setClickFlag] = useState<boolean>(false);
+
     return (
-        <div>
+        <TestCickContext.Provider value={{ clickflag, setClickFlag }} >
             <GuestHeader />
             <DynamicCreateMap />
-        </div>
+        </TestCickContext.Provider>
     )
 }
 export default ViewMap;

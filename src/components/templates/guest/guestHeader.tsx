@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { _Basebutton } from "../../atoms/button/_Basebutton";
 
 export const GuestHeader = () => {
     return (
@@ -17,6 +18,9 @@ export const GuestHeader = () => {
                                 <Link href='../../View/ViewTestMap'>
                                     <a>テスト用MAP</a>
                                 </Link>
+                            </li>
+                            <li>
+                                <_Basebutton />
                             </li>
                         </ul>
                     </nav>

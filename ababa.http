@@ -1,0 +1,6 @@
+POST http://192.168.54.125:3000/kokoike/
+Content-Type: application/json
+
+{
+    "routes": [[[38, 141]], [[34, 234]], [[453, 453]]]
+}
