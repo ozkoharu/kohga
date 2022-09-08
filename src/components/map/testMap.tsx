@@ -6,7 +6,7 @@ import L from 'leaflet';
 import React from "react";
 import { useState } from "react";
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';  //marker壊れたの直すよう
-import markerIcon from "leaflet/dist/images/marker-Icon.png";   //marker壊れたの直すよう
+import markerIcon from "leaflet/dist/images/marker-icon.png";   //marker壊れたの直すよう
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';   //marker壊れたの直すよう
 import { GuestHeader } from "../templates/guest/guestHeader";
 //壊れたアイコンの処理
